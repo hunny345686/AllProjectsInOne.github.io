@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>	
+		*{margin: 0;padding: 0; background-color: #a99b99;}
+		main{ height: 100vh; display: flex;	justify-content: center; align-items: center; }
+		.heart{ width: 200px;height: 200px; background-color: red; position: relative; transform: rotate(45deg);}
+		.heart:before{ content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;background:red; transform: translateY(-50%); border-radius: 50%;}
+		.heart:after{ content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;background:red; transform: translatex(-50%); border-radius: 50%;}
+		h2{
+			margin-top: 20px;
+			color: #fff;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<h2 align="center">Heart Shape</h2>
+<main>
+	<div class="heart"></div>
+</main>
+</body>
+</html>
